@@ -83,8 +83,8 @@ A lean example usage of _d3-hexgrid_.
 // Container.
 const svg = d3.select('body')
   .append('svg')
-  .attr(width, 'width')
-  .attr('height, 'height');
+  .attr('width', width)
+  .attr('height', height);
 
 // Projection and path.
 const projection = d3.geoAlbers().fitSize([width, height], geo);
@@ -123,8 +123,8 @@ First, we create an `SVG` element. Let's assume our geography represents mainlan
 ```
 const svg = d3.select('body')
   .append('svg')
-  .attr(width, 'width')
-  .attr('height, 'height');
+  .attr('width', width)
+  .attr('height', height);
 
 const projection = d3.geoAlbers().fitSize([width, height], geo);
 const geoPath = d3.geoPath().projection(projection);
